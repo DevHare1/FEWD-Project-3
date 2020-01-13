@@ -1,0 +1,65 @@
+/*Mobile--------------------*/
+*{
+    box-sizing: border-box
+}
+
+h1{
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    font-size: 1.25em;
+    color: white;
+    text-transform: uppercase;
+}
+
+h2{
+    font-family: 'Merriweather', serif;
+    font-size: 1.25em;
+}
+
+p{
+    font-family: 'Merriweather', serif;
+    font-weight: 90%;
+}
+
+
+/*Class Selectors--------------------*/
+
+.main-title{
+    background-color: rgb(42, 46, 63);
+    padding: 25px 0;
+    margin-top: 0;
+}
+
+.sign-up{
+    text-align: center;
+    padding-top: 15px;
+}
+
+.header-p{
+    text-align: center;
+    border-bottom: 4px solid black;
+    padding-bottom: 40px;;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.contact-info{
+    border-top: 2px solid black;
+    padding-top: 30px;
+    margin-top: 0;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.newsletter{
+    padding-top: 30px;
+    margin-top: 0;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.copyright{
+    font-style: italic;
+    text-align: center;
+}
