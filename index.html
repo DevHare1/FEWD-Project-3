@@ -21,22 +21,25 @@
         
         <form action="index.html" method="post">
 
-            <fieldset>
+            <fieldset class=>
+                
 
                 <legend class="legend-head">Contact Information</legend>
                 <h2 class="form-head">Contact Information</h2>
                 
-                    <label for="name">Full Name</label><br>
-                        <input type="text" id="name" name="user_name" placeholder="Required"><br>
-                    <label for="mail">Email Address</label><br>
-                        <input type="email" id="mail" name="user_email" placeholder="Required"><br>
-                    <label for="phone">Phone Number</label><br>
-                        <input type="tel" id="phone" name="user_phone"><br>
-                    <label for="address">Address</label><br>
-                        <input type="text" id="address" name="user_address"><br>
-                    <label for="city">City</label><br>
-                        <input type="text" id="city" name="user_city"><br>
-                    <label for="state">State</label><br>
+                <div class="container">
+                    
+                    <label for="name" class="selector2">Full Name</label>
+                        <input type="text" id="name" name="user_name" placeholder="Required">
+                    <label for="mail" class="selector2">Email Address</label>
+                        <input type="email" id="mail" name="user_email" placeholder="Required">
+                    <label for="phone" class="selector2">Phone Number</label>
+                        <input type="tel" id="phone" name="user_phone">
+                    <label for="address" class="selector2">Address</label>
+                        <input type="text" id="address" name="user_address">
+                    <label for="city" class="selector2">City</label>
+                        <input type="text" id="city" name="user_city">
+                    <label for="state" class="selector2">State</label>
                     <select>
                         <option value=""disabled selected hidden>Choose State</option>
                         <option value="AL">Alabama</option>
@@ -90,10 +93,12 @@
                         <option value="WV">West Virginia</option>
                         <option value="WI">Wisconsin</option>
                         <option value="WY">Wyoming</option>
-                    </select>				
-                    <label for="zip">Zip Code</label><br>
-                        <input type="text" id="zip" name="user_zip"><br>
-           
+                    </select>	
+                    <label for="zip" class="selector2">Zip Code</label>
+                        <input type="text" id="zip" name="user_zip">
+                    <div class="spacing"></div>    
+                </div>
+
             </fieldset>    
                 
             <fieldset>

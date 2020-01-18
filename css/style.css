@@ -72,7 +72,6 @@ input[type="tel"]{
     font-size: 1em;
     color: black;
     font-weight: 300; 
-    width: 100%;
     border: none;
     height: auto;
     padding: 15px;
@@ -83,13 +82,14 @@ input[type="tel"]{
     border-bottom: 3px solid rgba(0,0,0, 0.05);
     background-color: #e8eeef;
     box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    flex-basis: 100%;
+    flex-grow: 1;
 }
 
 select{
     font-size: 1em;
     color: black;
     font-weight: 300; 
-    width: 100%;
     border: none;
     height: auto;
     padding: 15px;
@@ -100,6 +100,8 @@ select{
     border-bottom: 3px solid rgba(0,0,0, 0.05);
     background-color: #e8eeef;
     box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    flex-basis: 100%;
+    flex-grow: 1;
 }
 
 button{
@@ -115,10 +117,18 @@ button{
     margin-top: 1em;
     border-radius: .3em;
     border-bottom: 3px solid rgba(0,0,0, 0.05);
-    background-color: #1fc5bd;
+    background-color: #52bab3;
     box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
     cursor: pointer;
 }
+
+::placeholder{
+    text-align: right;
+    font-size: .8em;
+    font-style: italic;
+    padding-right: 10px;
+}
+
 /*Class Selectors--------------------*/
 
 .mgn{
@@ -152,6 +162,10 @@ button{
     padding-bottom: 10px;
 }
 
+.selector2{
+    margin: auto;
+}
+
 .selection{
     padding-top: 10px;
     font-size: .85em;
@@ -168,3 +182,60 @@ button{
     text-align: center;
     padding-bottom: 100px;
 }
+
+#zip{
+    flex: 0 auto;
+    width: 50%;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container label{
+    flex-basis: 100%;
+    flex-grow: 1;
+}
+
+.ziplabel{
+    flex-basis: 100%;
+    flex-grow: 1;
+    margin: auto;
+}
+
+/*Desktop--------------------*/
+@media (min-width: 768px) {
+
+.mgn{
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+select{
+    flex-basis: 70%;
+    flex-grow: 1;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"]{
+    flex-basis: 70%;
+    flex-grow: 1;
+}
+
+.container label{
+    flex-basis: 30%;
+    flex-grow: 1;
+}
+
+#zip{
+    width: 30%;
+}
+
+.spacing{
+    flex-basis: 40%;
+}
+
+}
+
