@@ -129,6 +129,21 @@ button{
     padding-right: 10px;
 }
 
+input:focus {
+    border: solid 3px black;
+    background-color: white;
+}
+
+#state:focus{
+    border: solid 3px black;
+    background-color: white;
+}
+
+textarea:focus{
+    border: solid 3px black;
+    background-color: white;
+}
+
 /*Class Selectors--------------------*/
 
 .mgn{
@@ -202,6 +217,10 @@ button{
     flex-basis: 100%;
     flex-grow: 1;
     margin: auto;
+}
+
+#plaintext{
+    margin-bottom: 40px;
 }
 
 /*Desktop--------------------*/

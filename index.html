@@ -39,9 +39,9 @@
                         <input type="text" id="address" name="user_address">
                     <label for="city" class="selector2">City</label>
                         <input type="text" id="city" name="user_city">
-                    <label class="selector2">State</label>
-                    <select>
-                        <option value="disabled selected hidden">Choose State</option>
+                    <label for="state" class="selector2">State</label>
+                    <select id="state">
+                        <option value="disabled selected">Choose State</option>
                         <option value="AL">Alabama</option>
                         <option value="AK">Alaska</option>
                         <option value="AZ">Arizona</option>
@@ -116,7 +116,7 @@
                             <input type="radio" id="html2" value="html2" name="user_choice1"><label for="html2" class="chk">HTML</label><br>
                             <input type="radio" id="plaintext" value="plaintext" name="user_choice2"><label for="plaintext" class="chk">Plain Text</label><br>
 
-                    <p class="selection">Other topics you'd like to hear about</p>
+                    <label for="othertopics" class="selection">Other topics you'd like to hear about</label>
                         <textarea id="othertopics" name="user_othertopics"></textarea>
 
             </fieldset>  
